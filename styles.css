@@ -1,0 +1,251 @@
+*{
+   margin: 0; 
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Cuerpo de pagina*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+p{
+    margin: 0.5em 0 0.5em 0;
+    color: white;
+}
+
+/*Cabeceras*/
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    background-color: black;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    margin-right: 30%;
+    font-size: 2em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin-left: -94%;
+    font-size: 2em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    margin-left: -290%;
+    font-size: 2em;
+    margin-top: -6%;
+    text-align: center;
+}
+
+/*Navegador*/
+nav a:visited,
+nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+nav > ul > li > P1 {
+    color: rgb(188, 188, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60%;
+}
+
+nav > ul > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60%;
+} 
+
+/*Fondo de pagina*/
+main {
+    display: block;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    padding-top: 0em;
+    padding-bottom: 3em;
+    height: 85%;
+}
+
+a {
+    color: rgb(188, 188, 248);
+}
+
+/*Pie de pagina*/
+footer {
+    padding: 5px;
+}
+
+/*Articulo*/
+aside,
+article {
+    padding: 2em;
+}
+
+aside {
+    text-align: center;
+}
+
+article {
+    width: 80%;
+}
+
+/*Logos*/
+.logo {
+    max-width: 28%;
+    margin-right: 100%;
+    margin-top: -10%;
+}
+
+.logo_whatsapp {
+    max-width: 1%;
+    margin-right: 7%;
+    margin-top: -700%;
+    padding: 47px;
+}
+
+/*Titulos*/
+.title-cars {
+    color: white;
+    margin-left: 0%;
+    font-size: 2.0em;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 230%;
+}
+
+.title-contact {
+    color: white;
+    margin-left: 0%;
+    font-size: 2.0em;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 230%;
+}
+
+/*Subtitulos*/
+.sub-title {
+    background-color: black;
+    margin-right: 30%;
+    font-size: 1.0em;
+    padding: 10px;
+    border: solid 2px;
+    text-align: center;
+}
+
+.sub-title-cars {
+    background-color: black;
+    margin-right: -19%;
+    font-size: 1.0em;
+    padding: 10px;
+    border: solid 2px;
+    text-align: center;
+}
+
+.subtitle-mail {
+    color:rgb(219, 219, 219);
+    margin-left: -13%;
+    font-size: 1.0em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+@media only screen and (min-width: 760px) {
+    main {
+        display: flex;
+    }
+
+    aside {
+        margin-left: 2%;
+    }
+
+    .columns-desktop {
+        display: flex;
+    }
+}
+
+/* Formulario*/
+.input-group {
+    color: white;
+    width: 250px;
+    padding: 2px;
+    margin: 10px;
+    margin-left: -113%;
+    margin-top: 5%;
+}
+
+.button {
+    padding-top: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    width: 110px;
+    margin-left: -116%;
+    margin-top: -7%;
+    transform: translateX(155%);
+}
+
+/* Catalogo*/
+.sport  {
+    width: 250px;
+    padding: 3px;
+    margin: 10px;
+    background-color: white;
+    border: solid 3px black;
+}
+
+.sport {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.sport .title {
+    font-weight: bold;
+}
+
+.sport .price {
+    text-align: right;
+}
+
+.sport .columns {
+    max-width: 100%;
+    display: flex;
+}
+
+.sport .columns div {
+    width: 50%;
+}
+
+.sport button {
+    background-color:rgb(219, 219, 219);
+    padding: 9px;
+    border: solid 2px;
+    border-radius: 3px;
+}

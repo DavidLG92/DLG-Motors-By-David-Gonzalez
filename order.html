@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DLG Automotors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index_pagina_nueva.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <main>
+                <aside>
+                    <img style="max-width: 140%; max-height: 140%; margin-right: 100%; margin-left: 62%;" src="../images/banner_order.jpg" alt="contact-banner">
+                </aside>
+                <article>
+                   <h3>Order</h3>
+                   <div class="sport">
+                    <img src="">
+                    <div class="columns">
+                        <div class="title"></div>
+                        <div class="price"></div>
+                    </div>
+                    <p style="color: black;">
+                    </p>
+                    </div>
+                   <form action="http://jkorpela.fi/cgi-bin/echo.cgi", method="POST">
+                    <div class="input-group">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <div>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+                            <label for="last-name">Last Name</label>
+                            <div>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                            <label for="phone">Phone</label>
+                            <div>
+                                <input type="number" name="phone" id="phone">
+                            </div>
+                            <label for="mail">Email</label>
+                            <div>
+                                <input type="text" name="mail" id="mail">
+                            </div>
+                            <label for="postal-code">Postal Code</label>
+                            <div>
+                                <input type="number" name="postal-code" id="postal-code">
+                            </div>
+                            <label for="province">Province/Location:</label>
+                            <select name="locality" id="province">
+                            <optgroup label="Tucumán">
+                                <option value="tuucuman-capital">S.M. Tucumán</option>
+                                <option value="yerba-buena">Yerba Buena</option>
+                                <option value="tafi-del-valle">Tafí del Valle</option>
+                                <option value="tafi-viejo">Tafí Viejo</option>
+                                <option value="cruz-alta">Banda del Río Salí</option>
+                            </optgroup>
+                            <optgroup label="Salta">
+                                <option value="salta-capital">Salta</option>
+                                <option value="san-lorenzo">Sán Lorenzo</option>
+                                <option value="cafayate">Cafayate</option>
+                                <option value="general-guemes">General Güemes</option>
+                                <option value="metan">Metán</option>
+                            </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Order">
+                    </div>
+                   </form>
+                </article>
+            </main>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="index_pagina_nueva.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><p1> Country: Argentina </p1></li>
+                        <li><p1> Province: Tucumán </p1></li>
+                        <li><p1> City: Yerba Buena </p1></li>
+                        <li><p1> Address: Av. Aconquija 2500 </p1></li>
+                        <li><p1> Phone: +54 381 6700488 </p1></li>
+                        <a href="https://api.whatsapp.com/send?phone=+543816700488">Send us a WhatsApp</a>
+                    </ul>
+                </nav>
+                <aside>
+                    <img class="logo_whatsapp" src="../images/icono_whatsapp.png" alt="WhatsApp">
+                </aside>
+            </footer>
+</body>
+<script>
+    window.addEventListener("DOMContectLoaded", () => {
+        const order = localStorage.getItem("order")
+        if (order) {
+            const carsOrder = JSON.parse(order)
+            const car = document.querySelector(".sport")
+            const title = sport.querySelector(".title")
+            const price = sport.querySelector(".price")
+
+            title.innertext = carsOrder.title
+            title.innertext = carsOrder.price
+
+            const img = car.querySelector("img")
+            img.setAttribute ("src", `images/${carsOrder.id}.jpg`)
+        }
+    })
+    
+</script>
+</html>
